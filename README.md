@@ -15,7 +15,7 @@ In the future, we plan to expand the platform to include a full-fledged admin sy
 - Manage user accounts and permissions
 
 ## Features
-features marked with ⚠️ are still being worked on and are not functional.
+Features marked with ⚠️ are still being worked on and are not functional.
 - **Homepage**: Browse featured products, view product categories, and make purchases directly from the homepage.
 - **Responsive Design**: Mobile-friendly design ensures a seamless experience across devices.
 - **Product Pages**: Detailed product pages with descriptions, pricing, and images. ⚠️
