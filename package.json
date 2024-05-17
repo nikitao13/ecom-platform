@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "fastpush": "./commit-and-push.sh",
     "lint": "next lint"
   },
   "dependencies": {
