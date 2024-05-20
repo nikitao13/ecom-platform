@@ -3,6 +3,7 @@
 import Header from "@/components/Header";
 import { ProductCategory } from "@/types";
 import ProductRow from "@/components/ProductRow";
+import { useState } from "react";
 
 const categories: ProductCategory[] = [
     {
@@ -88,6 +89,8 @@ const categories: ProductCategory[] = [
 ];
 
 export default function Home() {
+    const [cartEmpty, setCartEmpty] = useState(true)
+
   return (
    <div className="scroll-smooth flex flex-col bg-gray-100 dark:bg-zinc-800 min-h-screen font-sans font-light">
        <Header />
@@ -99,3 +102,5 @@ export default function Home() {
    </div>
   );
 }
+
+
