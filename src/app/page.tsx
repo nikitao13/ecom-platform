@@ -89,7 +89,7 @@ const categories: ProductCategory[] = [
 
 export default function Home() {
   return (
-   <div className="scroll-smooth flex flex-col bg-gray-100 min-h-screen font-sans font-light">
+   <div className="scroll-smooth flex flex-col bg-gray-100 dark:bg-zinc-800 min-h-screen font-sans font-light">
        <Header />
        <main className="max-w-[1400px] mx-auto mb-8">
            {categories.map((category) => (
