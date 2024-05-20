@@ -1,11 +1,6 @@
-"use client"
-
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 
-export default function CartDetails() {
-    const [cartEmpty, setCartEmpty] = useState(false);
-
+export default function CartDetails({ cartEmpty }: { cartEmpty: boolean }) {
     const router = useRouter();
 
     const handleReturnHome = () => {
@@ -53,8 +48,7 @@ export default function CartDetails() {
             </div>
             </div>
             )
-        }
-            
+        } 
     </div>
     )
 }
