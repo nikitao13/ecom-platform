@@ -1,3 +1,5 @@
+"use client"
+
 import { Product } from "@/types";
 import { useState } from "react";
 import Image from 'next/image'
@@ -14,7 +16,7 @@ export default function ProductRow(props: ProductProps) {
     const hasMoreThanFourProducts = products.length > 4;
 
     return (
-        <div className="max-w-[1354px] shadow-md mt-6 bg-white px-6 py-4 mx-4 border rounded-md transition-all duration-300 dark:bg-zinc-900 dark:border-slate-950 dark:text-slate-200">
+        <div className="max-w-[1378px] shadow-md mt-6 bg-white px-6 py-4 mx-4 border rounded-md transition-all duration-300 dark:bg-zinc-900 dark:border-slate-950 dark:text-slate-200">
             <span className="flex items-center justify-between">
                 <h1 className="select-none text-xl mb-2 drop-shadow-sm">{category}</h1>
 
@@ -39,7 +41,7 @@ export default function ProductRow(props: ProductProps) {
                                 />
                                 {/* <img alt="clothing item" src="https://placehold.co/300" className="select-none drop-shadow-md hover:opacity-70 border rounded-sm transition-opacity duration-300 hover:cursor-pointer" /> */}
                                 <div className="flex mt-3 items-center justify-between drop-shadow-sm transition-opacity duration-300">
-                                    <span className="text-base">{product.name} - ${product.price.toFixed(2)}</span>
+                                    <span className="text-sm">{product.name} - ${product.price.toFixed(2)}</span>
                                     <button className="select-none ml-2 py-1 border rounded-md px-2 hover:bg-blue-200/80 transition-all duration-300 dark:border-slate-950 dark:bg-zinc-800 dark:hover:bg-blue-900 dark:text-slate-300">Add to Cart</button>
                                 </div>
                             </li>
